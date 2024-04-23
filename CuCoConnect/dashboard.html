@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #8a4af3;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e0e0e0;
+        }
+        tr:not(:last-child) {
+            margin-bottom: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #8a4af3;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Faculty Information</h1>
+    <table>
+        <tr>
+            <th>S. No</th>
+            <th>Name</th>
+            <th>E Code</th>
+            <th>Designation</th>
+            <th>Email ID</th>
+            <th>Mobile</th>
+            <th>Coordinators</th>
+            <th>Responsibilities</th>
+            <th>Load Relaxation Min</th>
+            <th>Load Relaxation Max</th>
+            <th>Room No.</th>
+        </tr>
+        <!-- Data Start -->
+        <tr>
+            <td>1</td>
+            <td>Er. Surinder Kaur</td>
+            <td>1033</td>
+            <td>AP</td>
+            <td>surinder.cse@cumail.in</td>
+            <td>8146651613</td>
+            <td>Er. Surinder Kaur</td>
+            <td>Academic Coordinator_1</td>
+            <td>10</td>
+            <td>12</td>
+            <td>611</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Er. Sugandha Sharma</td>
+            <td>1558</td>
+            <td>AP</td>
+            <td>sugandha.cse@cumail.in</td>
+            <td>8283811250</td>
+            <td>Er. Surinder Kaur</td>
+            <td>DAA Office</td>
+            <td>4</td>
+            <td>4</td>
+            <td>411</td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Er. Nitika Kapoor</td>
+            <td>4963</td>
+            <td>AP</td>
+            <td>nitika.cse@cumail.in</td>
+            <td>9216535040</td>
+            <td>Er. Surinder Kaur</td>
+            <td>PVC office reporting</td>
+            <td>4</td>
+            <td>4</td>
+            <td>507</td>
+
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Dr. Deepika Sharma</td>
+            <td>2670</td>
+            <td>Associate Professor</td>
+            <td>deepika.e2670@cumail.in</td>
+            <td>9815116877</td>
+            <td>Er. Surinder Kaur</td>
+            <td>DQAC OS,Cloud computing and Web Tech</td>
+            <td>14</td>
+            <td>14</td>
+            <td>607</td>
+
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Er. Gurmeet Saini</td>
+            <td>6709</td>
+            <td>AP</td>
+            <td>gurmeet.cse@cumail.in</td>
+            <td>9056101697</td>
+            <td>Er. Surinder Kaur</td>
+            <td>Event Coordinator</td>
+            <td>14</td>
+            <td>14</td>
+            <td>411</td>
+
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Er. Suraj Pal Singh</td>
+            <td>13804</td>
+            <td>AP</td>
+            <td>suraj.e13804@cumail.in</td>
+            <td>9720819688</td>
+            <td>Er. Surinder Kaur</td>
+            <td>MOOCs & GP Coordinator</td>
+            <td>12</td>
+            <td>14</td>
+            <td>517</td>
+
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Er. Bhuvneshwari</td>
+            <td>14361</td>
+            <td>AP</td>
+            <td>bhuvneshwari.e14361@cumail.in</td>
+            <td>9857863411</td>
+            <td>Er. Surinder Kaur</td>
+            <td></td>
+            <td>18</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Er. Sneha Kohli</td>
+            <td>16198</td>
+            <td>AP</td>
+            <td>sneha.e16198@cumail.in</td>
+            <td>9350429329</td>
+            <td>Er. Surinder Kaur</td>
+            <td></td>
+            <td>18</td>
+            <td>20</td>
+            <td>311</td>
+
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Er. Purnima</td>
+            <td>12332</td>
+            <td>AP</td>
+            <td>purnima.e12332@cumail.in</td>
+            <td>9350429329</td>
+            <td>Er. Surinder Kaur</td>
+            <td></td>
+            <td>18</td>
+            <td>20</td>
+            <td>311</td>
+
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Er. Sonam Juneja</td>
+            <td>11002</td>
+            <td>AP</td>
+            <td>sonam.e11002@cumail.in</td>
+            <td>9034749887</td>
+            <td>Er. Surinder Kaur</td>
+            <td>MSC Softcomputing</td>
+            <td>14</td>
+            <td>14</td>
+            <td>407</td>
+
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Dr. Sanjeev Kumar</td>
+            <td>14814</td>
+            <td>AP(Math)</td>
+            <td>sanjeev.e14814@cumail.in</td>
+            <td>9179070331</td>
+            <td>Er. Surinder Kaur</td>
+            <td></td>
+            <td>18</td>
+            <td>20</td>
+            <td>616</td>
+
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Er. Rajni Devi</td>
+            <td>15439</td>
+            <td>AP</td>
+            <td>rajni.e15439@cumail.in</td>
+            <td>9501019353</td>
+            <td>Er. Surinder Kaur</td>
+            <td></td>
+            <td>18</td>
+            <td>20</td>
+            <td>616</td>
+
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Dr. Gursimran Kaur</td>
+            <td>16567</td>
+            <td>AP (Math)</td>
+            <td>gursimran.e16567@cumail.in</td>
+            <td>7889185100</td>
+            <td>Er. Surinder Kaur</td>
+            <td></td>
+            <td>18</td>
+            <td>20</td>
+            <td>611</td>
+
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>ER. RAJAN SACHDEVA</td>
+            <td>12441</td>
+            <td>AP</td>
+            <td>rajan.e12441@cumail.in</td>
+            <td>7009443654</td>
+            <td>ER. RAJAN SACHDEVA</td>
+            <td>Academic Coordinator_2</td>
+            <td>10</td>
+            <td>12</td>
+            <td>611</td>
+
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Dr. Ruchika Gupta</td>
+            <td>7396</td>
+            <td>Professor</td>
+            <td>ruchikae7396@cumail.in</td>
+            <td>8511105298</td>
+            <td>ER. RAJAN SACHDEVA</td>
+            <td>Research Coordinator CSE/Reserach Symposium</td>
+            <td>12</td>
+            <td>14</td>
+            <td>409</td>
+
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Er Ravinder saini</td>
+            <td>6199</td>
+            <td>AP</td>
+            <td>ravindersaini.cse@cumail.in</td>
+            <td>9478964586</td>
+            <td>ER. RAJAN SACHDEVA</td>
+            <td>ACP</td>
+            <td>4</td>
+            <td>4</td>
+            <td>409</td>
+
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Dr. Monika Anand</td>
+            <td>12859</td>
+            <td>AP</td>
+            <td>monika.e12859@cumail.in</td>
+            <td>8295631817</td>
+            <td>ER. RAJAN SACHDEVA</td>
+            <td>NSS Coordinator</td>
+            <td>12</td>
+            <td>12</td>
+            <td>316</td>
+
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Er. Anu Kaushik</td>
+            <td>12329</td>
+            <td>AP</td>
+            <td>anu.e12329@cumail.in</td>
+            <td>9855460250</td>
+            <td>ER. RAJAN SACHDEVA</td>
+            <td>Mentoring Coordinator</td>
+            <td>14</td>
+            <td>16</td>
+            <td>409</td>
+
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Dr. Manjot</td>
+            <td>14222</td>
+            <td>AP</td>
+            <td>manjot.1@cumail</td>
+            <td>null</td>
+            <td>ER. RAJAN SACHDEVA</td>
+            <td>Examination Deptt.</td>
+            <td>2</td>
+            <td>2</td>
+            <td>611</td>
+
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Er. Shweta Tiwari</td>
+            <td>13352</td>
+            <td>AP</td>
+            <td>shweta.e13352@cumail.in</td>
+            <td>9670678444</td>
+            <td>ER. RAJAN SACHDEVA</td>
+            <td>International Coordinator</td>
+            <td>15</td>
+            <td>16</td>
+            <td>611</td>
+
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Er Apoorva</td>
+            <td>16061</td>
+            <td>TA</td>
+            <td>apoorva.e16061@cumail.in</td>
+            <td>8629019790</td>
+            <td>ER. RAJAN SACHDEVA</td>
+            <td>null</td>
+            <td>18</td>
+            <td>20</td>
+            <td>409</td>
+
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>Er. Parvesh Kumar</td>
+            <td>14417</td>
+            <td>AP</td>
+            <td>parvesh.e14417@cumail.in</td>
+            <td>9915387815</td>
+            <td>ER. RAJAN SACHDEVA</td>
+            <td>Competition Coordinator</td>
+            <td>14</td>
+            <td>16</td>
+            <td>311</td>
+
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Dr. Prabhdeep Singh</td>
+            <td>8559</td>
+            <td>Associate Professor</td>
+            <td>prabhdeep.e8559@cumail.in</td>
+            <td>9915117257</td>
+            <td>ER. RAJAN SACHDEVA</td>
+            <td>DQAC DBMS and IS</td>
+            <td>14</td>
+            <td>17</td>
+            <td>311</td>
+
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Er.Gurpreet Singh</td>
+            <td>7759</td>
+            <td>AP</td>
+            <td>gurpreete7759@cumail.in</td>
+            <td>9855007117</td>
+            <td>ER. RAJAN SACHDEVA</td>
+            <td>null</td>
+            <td>18</td>
+            <td>20</td>
+            <td>416</td>
+
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Er. Anzah Bashir</td>
+            <td>15803</td>
+            <td>AP</td>
+            <td>anzah.e15803@cumail.in</td>
+            <td>7006919005</td>
+            <td>ER. RAJAN SACHDEVA</td>
+            <td>null</td>
+            <td>18</td>
+            <td>20</td>
+            <td>409</td>
+
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>Er. Heena Sammi</td>
+            <td>16559</td>
+            <td>AP</td>
+            <td>heena.e16559@cumail.in</td>
+            <td>7307377623</td>
+            <td>ER. RAJAN SACHDEVA</td>
+            <td>null</td>
+            <td>18</td>
+            <td>20</td>
+            <td>311</td>
+
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>Dr. Heena Sharma</td>
+            <td>6398</td>
+            <td>AP(Math)</td>
+            <td>HeenaE6398@cumail.in</td>
+            <td>8264806176</td>
+            <td>ER. RAJAN SACHDEVA</td>
+            <td>MSC Probability and Statistics</td>
+            <td>14</td>
+            <td>14</td>
+            <td>316</td>
+
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>Mr. Sumit</td>
+            <td>R133</td>
+            <td>Research Scholar (Math)</td>
+            <td>sumit.r133@cumail.in</td>
+            <td>9592335027</td>
+            <td>ER. RAJAN SACHDEVA</td>
+            <td>Research Scholar</td>
+            <td>8</td>
+            <td>12</td>
+            <td>409</td>
+
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>Dr. Barkha</td>
+            <td>15724</td>
+            <td>AP(Math)</td>
+            <td>barkha.e15724@cumail.in</td>
+            <td>9053841910</td>
+            <td>ER. RAJAN SACHDEVA</td>
+            <td>null</td>
+            <td>18</td>
+            <td>20</td>
+            <td>611</td>
+
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>Dr. Jaspreet Singh</td>
+            <td>10279</td>
+            <td>Professor</td>
+            <td>batchhead2.cse@cumail.in</td>
+            <td>7973574227</td>
+            <td>Er. Gurpreet Kaur</td>
+            <td>Batch Head CSE 2nd Year</td>
+            <td>6</td>
+            <td>8</td>
+            <td>419</td>
+
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>Dr. NARINDER KAUR</td>
+            <td>12414</td>
+            <td>Associate Professor</td>
+            <td>narinder.e12414@cumail.in</td>
+            <td>8146924400</td>
+            <td>Er. Gurpreet Kaur</td>
+            <td>AO7 2nd Year</td>
+            <td>9</td>
+            <td>9</td>
+            <td>419</td>
+
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>Er. Gurpreet Kaur</td>
+            <td>12272</td>
+            <td>AP</td>
+            <td>gurpreet.e12272@cumail.in</td>
+            <td>9530836270</td>
+            <td>Er. Gurpreet Kaur</td>
+            <td>Academic Coordinator_3</td>
+            <td>10</td>
+            <td>12</td>
+            <td>616</td>
+
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>Er. Sheikh Afaan Farooq</td>
+            <td>14180</td>
+            <td>AP</td>
+            <td>sheikh.e14180@cumail.in</td>
+            <td>8493949654</td>
+            <td>Er. Gurpreet Kaur</td>
+            <td>Project Coordinator</td>
+            <td>10</td>
+            <td>12</td>
+            <td>611</td>
+
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>Dr. Sartajvir Singh</td>
+            <td>15199</td>
+            <td>AD</td>
+            <td>sartajvir.e15199@cumail.in</td>
+            <td>9646983007</td>
+            <td>Er. Gurpreet Kaur</td>
+            <td>AD</td>
+            <td>4</td>
+            <td>4</td>
+            <td>611</td>
+
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>ER. PARAMJOT KAUR SARAO</td>
+            <td>13257</td>
+            <td>AP</td>
+            <td>paramjot.e13257@cumail.in</td>
+            <td>8284994761</td>
+            <td>Er. Gurpreet Kaur</td>
+            <td>TimeTable Coordinator</td>
+            <td>14</td>
+            <td>16</td>
+            <td>316</td>
+
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>Er. Komal Sharma</td>
+            <td>14735</td>
+            <td>AP</td>
+            <td>komal.e14735@cumail.in</td>
+            <td>7814280160</td>
+            <td>Er. Gurpreet Kaur</td>
+            <td>sharing with ME(11 Hr to be given)</td>
+            <td>18</td>
+            <td>20</td>
+            <td>611</td>
+
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>Er. Divya Verma</td>
+            <td>13867</td>
+            <td>AP</td>
+            <td>divya.e13867@cumail.in</td>
+            <td>8168174512</td>
+            <td>Er. Gurpreet Kaur</td>
+            <td>MSC Operating System</td>
+            <td>14</td>
+            <td>14</td>
+            <td>616</td>
+
+        </tr>
+        <tr>
+            <td>39</td>
+            <td>Er. Anupriya</td>
+            <td>10436</td>
+            <td>AP</td>
+            <td>anupriya.e10436@cumail.in</td>
+            <td>9896404935</td>
+            <td>Er. Gurpreet Kaur</td>
+            <td>null</td>
+            <td>18</td>
+            <td>20</td>
+            <td>611</td>
+
+        </tr>
+        <tr>
+            
+            <td>41</td>
+            <td>Er Shikha Atwal</td>
+            <td>11186</td>
+            <td>AP</td>
+            <td>shikha.e11186@cumail.in</td>
+            <td>8860043868</td>
+            <td>Er. Gurpreet Kaur</td>
+            <td>null</td>
+            <td>18</td>
+            <td>20</td>
+            <td>611</td>
+
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>Er. Ishani Rana</td>
+            <td>14552</td>
+            <td>TA</td>
+            <td>Ishani.e14552@cumail.in</td>
+            <td>9805041253</td>
+            <td>Er. Gurpreet Kaur</td>
+            <td>null</td>
+            <td>18</td>
+            <td>20</td>
+            <td>616</td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>Dr. Satyaban panigrahi</td>
+            <td>14739</td>
+            <td>AP(Math)</td>
+            <td>satyaban.e14739@cumail.in</td>
+            <td>9337783088</td>
+            <td>Er. Gurpreet Kaur</td>
+            <td>null</td>
+            <td>18</td>
+            <td>20</td>
+            <td>517</td>
+
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>Dr.Sneha Garg</td>
+            <td>16052</td>
+            <td>AP(Math)</td>
+            <td>sneha.e16052@cumail.in</td>
+            <td>7696590313</td>
+            <td>Er. Gurpreet Kaur</td>
+            <td>null</td>
+            <td>18</td>
+            <td>20</td>
+            <td>616</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>Er. Navdeep Singh</td>
+            <td>7551</td>
+            <td>AP</td>
+            <td>NavdeepE7551@cumail.in</td>
+            <td>9888889861</td>
+            <td>Er. Navdeep Singh</td>
+            <td>Academic Coordinator_4</td>
+            <td>10</td>
+            <td>12</td>
+            <td>411</td>
+
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>Er. Manish Sharma</td>
+            <td>5593</td>
+            <td>AP</td>
+            <td>manish.cse@cumail.in</td>
+            <td>9045821386</td>
+            <td>Er. Navdeep Singh</td>
+            <td>AO2 2ND YEAR</td>
+            <td>9</td>
+            <td>9</td>
+            <td>411</td>
+
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>Dr. Amit jain</td>
+            <td>7130</td>
+            <td>Professor</td>
+            <td>amitjain.uic@cumail.in</td>
+            <td>7906467499</td>
+            <td>Er. Navdeep Singh</td>
+            <td>Associate Dean (DAA Office)</td>
+            <td>3</td>
+            <td>3</td>
+            <td>411</td>
+
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>Dr.Jaspreet Singh</td>
+            <td>7231</td>
+            <td>Professor</td>
+            <td>jaspreete7231@cumail.in</td>
+            <td>9888424268</td>
+            <td>Er. Navdeep Singh</td>
+            <td>DQAC Python and Soft computing</td>
+            <td>12</td>
+            <td>14</td>
+            <td>616</td>
+
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>Er. Kamna Sharma</td>
+            <td>12777</td>
+            <td>AP</td>
+            <td>kamna.e12777@cumail.in</td>
+            <td>9467810195</td>
+            <td>Er. Navdeep Singh</td>
+            <td>null</td>
+            <td>18</td>
+            <td>20</td>
+            <td>311</td>
+
+        </tr>
+        <tr>
+            <td>50</td>
+            <td>Er. Ravi Bhushan Sharma</td>
+            <td>15239</td>
+            <td>AP</td>
+            <td>ravibhushan.e15239@cumail.in</td>
+            <td>9509822782</td>
+            <td>Er. Navdeep Singh</td>
+            <td>null</td>
+            <td>18</td>
+            <td>20</td>
+            <td>409</td>
+
+        </tr>
+        <tr>
+            <td>51</td>
+            <td>Er. Priyaranjan Raj</td>
+            <td>15922</td>
+            <td>AP</td>
+            <td>priya.e15922@cumail.in</td>
+            <td>9110081948</td>
+            <td>Er. Navdeep Singh</td>
+            <td>null</td>
+            <td>18</td>
+            <td>20</td>
+            <td>409</td>
+
+        </tr>
+        <tr>
+            <td>52</td>
+            <td>Dr. Vikas Jindal</td>
+            <td>9636</td>
+            <td>Professor</td>
+            <td>vikas.e9636@cumail.in</td>
+            <td>8295262540</td>
+            <td>Er. Navdeep Singh</td>
+            <td>null</td>
+            <td>12</td>
+            <td>14</td>
+            <td>311</td>
+
+        </tr>
+        <tr>
+            <td>53</td>
+            <td>Er. Komalpreet Saini</td>
+            <td>14279</td>
+            <td>AP</td>
+            <td>komalpreet.e14279@cumail.in</td>
+            <td>9780698976</td>
+            <td>Er. Navdeep Singh</td>
+            <td>Event Coordinator</td>
+            <td>14</td>
+            <td>14</td>
+            <td>611</td>
+
+        </tr>
+        <tr>
+            <td>54</td>
+            <td>Er. Kushal preet kaur</td>
+            <td>16395</td>
+            <td>AP</td>
+            <td>kushalpreet.e16395@cumail.in</td>
+            <td>7719458409</td>
+            <td>Er. Navdeep Singh</td>
+            <td>null</td>
+            <td>18</td>
+            <td>20</td>
+            <td>409</td>
+
+        </tr>
+        <tr>
+            <td>55</td>
+            <td>Er. Jyoti Saini</td>
+            <td>11736</td>
+            <td>AP</td>
+            <td>jyoti.e11736@cumail.in</td>
+            <td>6280332148</td>
+            <td>Er. Navdeep Singh</td>
+            <td>null</td>
+            <td>18</td>
+            <td>20</td>
+            <td>409</td>
+
+        </tr>
+        <tr>
+            <td>56</td>
+            <td>Ms. Harmanpreet Sandhu</td>
+            <td>8351</td>
+            <td>AP(Math)</td>
+            <td>harmanpreet.e8351@cumail.in</td>
+            <td>8968055947</td>
+            <td>Er. Navdeep Singh</td>
+            <td>null</td>
+            <td>18</td>
+            <td>20</td>
+            <td>311</td>
+
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>Ms.Jeevanpreet Kaur</td>
+            <td>15979</td>
+            <td>AP(Math)</td>
+            <td>jeevanpreet.e15979@cumail.in</td>
+            <td>8968944403</td>
+            <td>Er. Navdeep Singh</td>
+            <td>null</td>
+            <td>18</td>
+            <td>20</td>
+            <td>409</td>
+
+        </tr>
+        <tr>
+            <td>58</td>
+            <td>Ms.Mir Aliya</td>
+            <td>15881</td>
+            <td>AP(Math)</td>
+            <td>mir.e15881@cumail.in</td>
+            <td>7889370298</td>
+            <td>Er. Navdeep Singh</td>
+            <td>null</td>
+            <td>18</td>
+            <td>20</td>
+            <td>316</td>
+
+        </tr>
+        <tr>
+            <td>59</td>
+            <td>Er. Rajani Mishra</td>
+            <td>8033</td>
+            <td>AP</td>
+            <td>Rajani.E8033@cumail.in</td>
+            <td>7889289847</td>
+            <td>Er. Rajani Mishra</td>
+            <td>Academic Coordinator_5</td>
+            <td>10</td>
+            <td>12</td>
+            <td>311</td>
+
+        </tr>
+        <tr>
+            <td>60</td>
+            <td>Er. Vivek Ghai</td>
+            <td>1321</td>
+            <td>AD</td>
+            <td>vivek.cse@cumail.in</td>
+            <td>9417475452</td>
+            <td>Er. Rajani Mishra</td>
+            <td>Reporting Egov</td>
+            <td>3</td>
+            <td>4</td>
+            <td>311</td>
+
+        </tr>
+        <tr>
+            <td>61</td>
+            <td>Er Richa Sharma</td>
+            <td>5774</td>
+            <td>AP</td>
+            <td>richa.e5774@cumail.in</td>
+            <td>9815152736</td>
+            <td>Er. Rajani Mishra</td>
+            <td>NBA Team</td>
+            <td>6</td>
+            <td>6</td>
+            <td>311</td>
+
+        </tr>
+        <tr>
+            <td>62</td>
+            <td>Er. Kanwaldeep Kaur</td>
+            <td>8852</td>
+            <td>AP</td>
+            <td>kanwaldeep.e8852@cumail.in</td>
+            <td>8427842500</td>
+            <td>Er. Rajani Mishra</td>
+            <td>Project Coordinator</td>
+            <td>10</td>
+            <td>12</td>
+            <td>416</td>
+
+        </tr>
+        <tr>
+            <td>63</td>
+            <td>Er. Shikha Kamal</td>
+            <td>12552</td>
+            <td>AP</td>
+            <td>shikha.e12552@cumail.in</td>
+            <td>9418031707</td>
+            <td>Er. Rajani Mishra</td>
+            <td>NBA</td>
+            <td>18</td>
+            <td>20</td>
+            <td>611</td>
+
+        </tr>
+        <tr>
+            <td>64</td>
+            <td>Er Vandna</td>
+            <td>15995</td>
+            <td>AP</td>
+            <td>vandna.e15995@cumail.in</td>
+            <td>7018448309</td>
+            <td>Er. Rajani Mishra</td>
+            <td>null</td>
+            <td>18</td>
+            <td>20</td>
+            <td>409</td>
+
+        </tr>
+        <tr>
+            <td>65</td>
+            <td>ER. NEHA ARYA</td>
+            <td>12269</td>
+            <td>AP</td>
+            <td>neha.e12269@cumail.in</td>
+            <td>9896928571</td>
+            <td>Er. Rajani Mishra</td>
+            <td>MOOCs & GP Coordinator</td>
+            <td>12</td>
+            <td>14</td>
+            <td>409</td>
+
+        </tr>
+        <tr>
+            <td>66</td>
+            <td>Narayan Vyas</td>
+            <td>14662</td>
+            <td>AP</td>
+            <td>narayan.e14662@cumail.in</td>
+            <td>9896928571</td>
+            <td>Er. Rajani Mishra</td>
+            <td>Trainer for Kargil</td>
+            <td>12</td>
+            <td>14</td>
+            <td>611</td>
+
+        </tr>
+    </table>
+</body>
+</html>
